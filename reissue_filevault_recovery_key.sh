@@ -20,7 +20,11 @@
 ################################## VARIABLES ##################################
 
 # Company logo. (Tested with PNG, JPG, GIF, PDF, and AI formats.)
-LOGO="/Library/Application Support/PretendCo/logo@512px.png"
+#LOGO="/Library/Application Support/PretendCo/logo@512px.png"
+
+# Use Jamf SelfService.app icon instead of company logo.
+cp /Library/Application\ Support/JAMF/Jamf.app/Contents/Resources/AppIcon.icns $HOME/Downloads/jamf-logo.png
+LOGO=$HOME/Downloads/jamf-logo.png
 
 # The title of the message that will be displayed to the user.
 # Not too long, or it'll get clipped.
